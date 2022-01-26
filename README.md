@@ -19,7 +19,7 @@ After that new shortcut will appear on your desktop. After clicking at it Firefo
 The extension allows to launch Roblox Player via url (normally that only happens by VIP servers links). In this way your data is secured by browser's encryption.
 
 **Why you shouldn't use Firefox normally when using this scripts?**
-To launch browser in a headless mode (silently) we need to terminate Firefox's processes first. It's hard or impossible to launch new firefox.exe processes (there's many) one to normally visible window and second to headless mode. The point of this scripts is to launch your favorite Roblox games instantly from your desktop without seeing and opening browser cards in front of you. Also opening website without rendering it is faster.
+To launch browser in headless mode (silently) we need to terminate Firefox's processes first. It's hard or impossible to launch new firefox.exe processes (there's many) one to normally visible window and second to headless mode. The point of this scripts is to launch your favorite Roblox games instantly from your desktop without seeing and opening browser cards in front of you. Also opening website without rendering it is faster.
 
 **Why not Google Chrome?**
 First of all - stupid (in my opinion) security policies. You can launch Chrome like Mozilla in headless mode (silent-mode) but then you can't use extensions and there's no way to skip that. Second is the popularity. Chrome is the most popular browser that is probably used by most of you.
