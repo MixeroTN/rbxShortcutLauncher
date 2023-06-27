@@ -1,11 +1,21 @@
 # rbxShortcutLauncher
+
+[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](#---)
+[![Firefox](https://img.shields.io/badge/Firefox_Browser-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)](https://mozilla.org)
+[![Roblox](https://img.shields.io/badge/Roblox-red?style=for-the-badge&logo=Roblox&logoColor=white)](https://roblox.com)
+[![VBScript](https://img.shields.io/badge/vbscript-15dcdc?style=for-the-badge&logo=windowsterminal&logoColor=white)](#---)
+[![Batchfile](https://img.shields.io/badge/batchfile-green?style=for-the-badge&logo=windowsterminal&logoColor=white)](#---)
+[![License](https://img.shields.io/badge/LICENSE-MIT-brightgreen?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
 **Windows desktop shortcuts for Roblox games - launch Roblox without visible browser!**
 
-**Requirements:**
-  1. Mozilla Firefox (not used by you as default browser, if so you can switch to LibreWolf).
-  2. Roblox URL Launcher by DevKurka (Firefox extension) installed.
-  3. Logged into Roblox website.
-  4. Allowed to launch Roblox Player by this browser without asking (to do so press play on game's page and press allow on popup window).
+## Requirements
+  - Mozilla Firefox (not used by you as default browser, if so you can switch to LibreWolf).
+  - Roblox URL Launcher by DevKurka (Firefox extension) installed.
+  - Logged into Roblox website.
+  - Allowed to launch Roblox Player by this browser without asking (to do so press play on game's page and press allow on popup window).
+
+## [![Download browser](https://img.shields.io/badge/Download%20browser-Firefox-FF7139?style=for-the-badge&logo=firefoxbrowser)](https://mozilla.org) [![Download browser](https://img.shields.io/badge/Download%20browser-Librewolf-00ACFF?style=for-the-badge&logo=firefoxbrowser)](https://librewolf.net) [![Install ADDON](https://img.shields.io/badge/Install%20addon-Roblox%20URL%20Launcher-20123a?style=for-the-badge&logo=firefoxbrowser)](https://addons.mozilla.org/en-US/firefox/addon/roblox-url-launcher)
 
 ## How it works?
 First you need to do after matching a requirements is launching `Launcher.vbs`.
