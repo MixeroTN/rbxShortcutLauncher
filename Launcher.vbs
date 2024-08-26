@@ -1,24 +1,26 @@
-scriptdir = CreateObject("Scripting.FileSystemObject").GetParentFolderName(WScript.ScriptFullName)
-x=InputBox("Enter the name of the game:" , "Add the Roblox game shortcut", Default)
-if x = "" then
-    WScript.Quit
-end if
-y=InputBox("Name: " & x & vbCrLf & vbCrLf & "Enter the ID of the game:" , "Add the Roblox game shortcut", Default)
-if y = "" then
-    WScript.Quit
-end if
-Set Shell = CreateObject("WScript.Shell")
-DesktopPath = Shell.SpecialFolders("Desktop")
-Set link = Shell.CreateShortcut(DesktopPath & "\" & x & ".lnk")
-link.Arguments = y
-link.Description = "Made with rbxShortcutLauncher by MixeroTN"
-'link.HotKey = "CTRL+ALT+SHIFT+X"
-link.IconLocation = scriptdir & "\roblox.ico"
-'link.TargetPath = "C:\Windows\System32\cmd.exe"
-link.TargetPath = scriptdir & "\operator.vbs"
-link.WorkingDirectory = scriptdir
-'link.WindowStyle = 3
-'link.WorkingDirectory = "c:\blah"
-link.Save
+' Get the directory of the current script
+scriptDir = CreateObject("Scripting.FileSystemObject").GetParentFolderName(WScript.ScriptFullName)
 
-'CreateObject("Wscript.Shell").Run scriptdir & "\operator.bat",0,True
+' Prompt user to enter the name
+gameName = InputBox("Enter name of the game:", "Create new Roblox game shortcut")
+If gameName = "" Then
+    WScript.Quit
+End If
+
+' Prompt user to enter the game ID
+gameID = InputBox("Name: " & gameName & vbCrLf & vbCrLf & "Enter the ID of the game:", "Create new Roblox game shortcut")
+If gameID = "" Then
+    WScript.Quit
+End If
+
+' Create a desktop shortcut for the game
+Set shell = CreateObject("WScript.Shell")
+Set shortcut = shell.CreateShortcut(shell.SpecialFolders("Desktop") & "\" & gameName & ".lnk")
+
+' Set shortcut properties
+shortcut.Arguments = gameID
+shortcut.Description = "Made with rbxShortcutLauncher by MixeroTN"
+shortcut.IconLocation = scriptDir & "\roblox.ico"
+shortcut.TargetPath = scriptDir & "\operator.vbs"
+shortcut.WorkingDirectory = scriptDir
+shortcut.Save
