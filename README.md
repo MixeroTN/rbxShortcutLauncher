@@ -7,40 +7,40 @@
 [![Batchfile](https://img.shields.io/badge/batchfile-green?style=for-the-badge&logo=windowsterminal&logoColor=white)](#---)
 [![License](https://img.shields.io/badge/LICENSE-MIT-brightgreen?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**Windows desktop shortcuts for Roblox games - launch Roblox without visible browser!**
+**Easily create Windows desktop shortcuts for Roblox games and launch Roblox without a visible browser!**
 
 ## Requirements
 
-- Mozilla Firefox (not used by you as default browser, if so you can switch to LibreWolf).
+- Mozilla Firefox (not your default browser; consider switching to some fork like LibreWolf if it is).
 - Roblox URL Launcher by DevKurka (Firefox extension) installed.
-- Logged into Roblox website.
-- Allowed to launch Roblox Player by this browser without asking (to do so press play on game's page and press allow on popup window).
+- Logged into the Roblox website.
+- Allowed Roblox Player to launch from your browser without prompting (to do this, click "Play" on a game's page and choose "Allow" on the popup window).
 
 ## [![Download browser](https://img.shields.io/badge/Download%20browser-Firefox-FF7139?style=for-the-badge&logo=firefoxbrowser)](https://mozilla.org) [![Download browser](https://img.shields.io/badge/Download%20browser-Librewolf-00ACFF?style=for-the-badge&logo=firefoxbrowser)](https://librewolf.net) [![Install addon](https://img.shields.io/badge/Install%20addon-Roblox%20URL%20Launcher-20123a?style=for-the-badge&logo=firefoxbrowser)](https://addons.mozilla.org/en-US/firefox/addon/roblox-url-launcher)
 
-## How it works?
+## How It Works
 
-First you need to do after matching a requirements is launching `Launcher.vbs`.
+After meeting the requirements, launch `Launcher.vbs`.
 
-You will be asked to provide the name (it's shortcut name so you can provide whatever you want) and the id of the game. To get the id you need to visit the game's page on Roblox website and copy paste the numbers from the url.
+You will be prompted to enter the name (this will be the shortcut name, so you can use whatever you like) and the game ID. To find the game ID, visit the game's page on the Roblox website and copy the numbers from the URL.
 
-After that new shortcut will appear on your desktop. After clicking at it Firefox starts in headless mode (visible only in process list) and you should get the Roblox window after few seconds (depends on your specs). When Roblox process starts firefox.exe processes are being terminated.
+Afterward, a new shortcut will appear on your desktop. When you click it, Firefox starts in headless mode (visible only in the process list), and within a few seconds (depending on your system's specs), the Roblox window should open. Once the Roblox process starts, the Firefox processes are terminated.
 
 ## Security
 
-The Firefox extension you installed allows to launch any Roblox game via url (normally that only happens by VIP servers links). In this way your data is secured by browser's encryption.
+The Firefox extension you installed allows any Roblox game to be launched via URL (normally this only happens with VIP server links). Your data remains secure, protected by the browser's encryption.
 
-## Why you shouldn't use Firefox normally when using this scripts?
+## Why Avoid Using Firefox Normally with These Scripts?
 
-To launch browser in headless mode (silently) we need to terminate Firefox's processes first. It's hard or impossible to launch new firefox.exe processes (there's many) one to normally visible window and second to headless mode. The point of this script is to launch your favorite Roblox games instantly from your desktop without seeing and opening browser cards in front of you. Also opening website without rendering it is faster.
+To launch the browser in headless mode (silently), we need to terminate existing Firefox processes first. It’s difficult to run one Firefox instance in normal mode and another in headless mode simultaneously. The purpose of this script is to launch your favorite Roblox games instantly from your desktop without browser window popping up. Additionally, opening a website without rendering it is faster.
 
-## Why not Google Chrome?
+## Why Not Google Chrome?
 
-First of all - stupid (in my opinion) security policies. You can launch Chrome like Mozilla in headless mode (silent-mode) but then you can't use extensions and there's no way to bypass that. Second is the popularity. Chrome is the most popular browser that is probably used by most of you.
+First, Chrome's security policies can be restrictive (in my opinion). While Chrome can be run in headless mode (silent mode), extensions cannot be used then, and there’s no way to bypass that. Secondly, Chrome's popularity makes it more likely for a potential user to use it as the default browser, which could interfere with the script's operation.
 
-## Firefox update messed it up!
+## Firefox Update Issues
 
-Even in headless mode Firefox launches post-update window first. To make extension launch Roblox website card must be focused. So if you see the update window wait for it to dissapear and click at shortcut again. This will of course terminate firefox.exe processes and launch it again. If you still can't launch a game:
+When Firefox updates, it may launch an update window even in headless mode. To ensure the extension can launch the Roblox website, the browser tab must be focused. If you see the update window, wait for it to disappear, then click the shortcut again. This will terminate the Firefox processes and relaunch them. If you still can't launch a game:
 
-- Open Firefox normally and try to launch the game from website (then you can make sure browser is allowed to launch Roblox Player without asking)
-- Delete the shortcut and make the new one (also check that id is correct)
+- Open Firefox normally and try launching the game from the website to ensure the browser is still allowed to launch Roblox Player without asking.
+- Delete the shortcut and create a new one (also, double-check if the game ID is correct).
